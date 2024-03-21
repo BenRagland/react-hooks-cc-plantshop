@@ -31,6 +31,20 @@ function PlantList({plantList,setPlantList}) {
     setPlantList(afterDelList)
   }
 
+  function editState(id,newPrice){
+    const newEditList = plantList.map((plant, i)=>{
+      if (plant.id === id){
+         return {
+          ...plant,
+          price: newPrice
+         } 
+      }else{
+        return plant
+      }
+      
+    })
+    setPlantList(newEditList)
+  }
   
 
   return (
@@ -47,6 +61,7 @@ function PlantList({plantList,setPlantList}) {
             plantPrice={price}
 
             deleteState={deleteState}
+            editState={editState}
           />
           
         )

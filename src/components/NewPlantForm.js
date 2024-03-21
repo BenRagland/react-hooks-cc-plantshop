@@ -35,6 +35,11 @@ function NewPlantForm( {updatePlantState}) {
     })
     .then(data => {
       updatePlantState(data)
+      setPlantForm({
+        name:"",
+        image:"",
+        price: ''
+      })
     } )
     .catch((err)=>{
       console.log(err)
