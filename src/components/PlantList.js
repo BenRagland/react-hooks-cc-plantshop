@@ -21,6 +21,17 @@ function PlantList({plantList,setPlantList}) {
     })
   },[])
 
+  function deleteState(id){
+    const afterDelList = plantList.filter((plant, i)=>{
+      if(plant.id !== id){
+        return true
+      }
+    })
+
+    setPlantList(afterDelList)
+  }
+
+  
 
   return (
     <ul className="cards">
@@ -28,10 +39,14 @@ function PlantList({plantList,setPlantList}) {
      
         return( 
           <PlantCard 
+            
             key={id}
+            id={id}
             plantName={name} 
             plantImage={image}
             plantPrice={price}
+
+            deleteState={deleteState}
           />
           
         )
