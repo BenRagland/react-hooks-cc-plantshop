@@ -1,0 +1,34 @@
+<mxfile host="65bd71144e">
+    <diagram id="LsB_PC_mHqAIHCKXq_3c" name="Page-1">
+        <mxGraphModel dx="673" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="App" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="210" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="NewPlantForm" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="520" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="PlantPage" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="360" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Search" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="520" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="PlantList" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="520" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Header" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="430" y="370" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="PlantList State" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="410" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Search&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="410" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
