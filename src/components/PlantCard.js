@@ -53,6 +53,13 @@ function PlantCard({plantName,plantImage,plantPrice,id,deleteState,editState}) {
     })
   }
 
+  // Format Price for Display
+  const formattedPrice = Number(plantPrice).toLocaleString('en-US', {
+    style: 'decimal',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }) 
+
   return (
     <li className="card" data-testid="plant-item">
       {/* handle image or stock pic */}
@@ -65,20 +72,16 @@ function PlantCard({plantName,plantImage,plantPrice,id,deleteState,editState}) {
       <h4>{plantName ? plantName : "Missing Name"}</h4>
 
       {/* Price Display & display Number Formatting*/}
+      
       {editMode ? 
         <>
           <input type="number" 
-          placeholder={`Change here-> ${plantPrice}` }
+          placeholder={`Change price here - $${formattedPrice}` }
           value={editPrice}
           onChange={(e)=> setEditPrice(e.target.value)}/>
         </>
         : 
-        <p>Price: $ {Number(plantPrice).toLocaleString('en-US', {
-          style: 'decimal',
-          minimumFractionDigits: 2,
-          maximumFractionDigits: 2,
-        })
-        }</p>
+        <p>Price: $ {formattedPrice}</p>
       }
 
       {/* In Stock  */}
